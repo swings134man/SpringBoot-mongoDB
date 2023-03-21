@@ -1,0 +1,8 @@
+** Spring Boot + MongoDB
+
+- Spring Data JPA(Hibernate) , MongoDB(JPA), h2, mysql
+    - 다양한 DB 를 공통적으로 사용할것이기 떄문에 MongoDB는 MongoDB Reactive 라이브러리를 사용해야함.
+
+- 호환 문제?, 사용법 부재로 인한 Test 흐름에 문제.
+
+2023.03.22 : Mono, Flux 타입(Java) 공부.
