@@ -28,6 +28,11 @@ public class MongoFirstController {
 
     private final MemberRepository repository;
 
+    /**
+     * Post - save
+     * @param inDTO
+     * @return
+     */
     @PostMapping("v1/insert/member")
     public Mono<Member_info> insertMember(@RequestBody MemberDTO inDTO) {
         log.info("Controller Request Param >>>> {}", inDTO);
@@ -41,6 +46,10 @@ public class MongoFirstController {
         return save;
     }
 
+    /**
+     * FindAll - Get
+     * @return
+     */
     @GetMapping("v1/findall/member")
     public Flux<Member_info> findAll() {
 
@@ -50,6 +59,12 @@ public class MongoFirstController {
         return all;
     }
 
+    /**
+     * Update
+     * @param inDTO
+     * @param id
+     * @return
+     */
     @PutMapping("v1/update/member")
     public Mono<Member_info> updateMember(@RequestBody MemberDTO inDTO, @RequestParam String id) {
         // save() 는 id(PK)가 같으면 수정. -> Spring data JPA 와 같음.
@@ -62,6 +77,11 @@ public class MongoFirstController {
         return save;
     }
 
+    /**
+     * Delete
+     * @param id
+     * @return
+     */
     @DeleteMapping("v1/delete/member")
     public int deleteMember(@RequestParam String id) {
         // id : pk 값으로 삭제.
