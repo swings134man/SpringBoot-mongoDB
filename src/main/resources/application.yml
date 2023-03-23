@@ -1,6 +1,7 @@
 server:
   port: 8080
 
+# MongoDB Settings
 spring:
   data:
     mongodb:
@@ -9,3 +10,16 @@ spring:
       username: kang
       password: 1234
       database: boot_test_db
+
+
+  # MySQL
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/ev_music?useSSL=false
+#    username: root
+#    password: 1234
+#
+## MyBatis Settings
+#mybatis:
+#  config-location: mybatis/mybatis-config.xml
+#  mapper-locations: mybatis/mapper/*.xml
