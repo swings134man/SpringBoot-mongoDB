@@ -5,7 +5,7 @@ server:
 spring:
   data:
     mongodb:
-      host: localhost
+      host: 192.168.35.135
       port: 27017
       username: kang
       password: 1234
