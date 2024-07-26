@@ -2,20 +2,20 @@ server:
   port: 8080
 
 # MongoDB Settings
-#spring:
-#  data:
-#    mongodb:
-#      uri: mongodb://test1:test1234@192.168.35.135:17017/test?authSource=admin&authMechanism=SCRAM-SHA-1
-#      uri: mongodb://192.168.35.135:17017
-#      database: test
 spring:
   data:
     mongodb:
-      host: 192.168.35.135
-      port: 17017
-      username: lucas
-      password: kyj7114
+      uri: mongodb://test1:test1234@192.168.35.135:17017/test?authSource=admin&authMechanism=SCRAM-SHA-1
       database: test
+
+#spring:
+#  data:
+#    mongodb:
+#      host: 192.168.35.135
+#      port: 17017
+#      username: test1
+#      password: test1234
+#      database: test
 #      authentication-database: admin
 
 

@@ -1,7 +1,7 @@
 package com.using.mongo.first.domain;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -15,9 +15,10 @@ import javax.persistence.Id;
  * @version : 1.0.0
  * @Description :
  ************/
-@Document(collection = "member_info")
-@NoArgsConstructor
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Document(collection = "member_info")
 public class Member_info {
 
     @Id
