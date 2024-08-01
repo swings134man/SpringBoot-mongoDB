@@ -38,6 +38,7 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'io.projectreactor:reactor-test'
 
+    implementation files('libs/swagger-converter-1.0.jar')
 }
 
 tasks.named('test') {
