@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+# MongoDB Settings
+spring:
+  data:
+    mongodb:
+      uri: mongodb://test1:test1234@192.168.45.135:17017/test?authSource=admin&authMechanism=SCRAM-SHA-1
+      database: test
+
+#  datasource:
+#    driver-class-name: org.mariadb.jdbc.Driver
+#    url: jdbc:mariadb://192.168.35.135:3360/boot_redis?useSSL=false
+#    username: develop
+#    password: develop12!@
